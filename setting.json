@@ -1,15 +1,14 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-  "copyOnSelect": false,
+  "copyOnSelect": true,
   "copyFormatting": false,
   "profiles": {
-    // 配置中文文档  https://docs.microsoft.com/zh-cn/windows/terminal/
     "defaults": {
-      "fontFace": "Fira Code", // oh-my-posh 主题原因，使用其他的字体可能会出现乱码
-      "backgroundImage": "D:\\img\\3.jpg", // 背景图片地址
-      "backgroundImageOpacity": 0.5, // 透明度
-      "colorScheme": "Andromeda", // 颜色方案
+      "fontFace": "Fira Code",
+      "backgroundImage": "D:\\img\\3.jpg",
+      "backgroundImageOpacity": 0.5,
+      "colorScheme": "Brogrammer",
       "acrylicOpacity": 0.7,
       "useAcrylic": true
     },
@@ -22,7 +21,8 @@
         "startingDirectory": "D:\\company",
         "fontSize": 10,
         "padding": "20",
-        "hidden": false
+        "hidden": false,
+        "antialiasingMode":"cleartype"
       },
       {
         "guid": "{f323ab3c-9641-4904-a3a6-dc4e4992b6ae}",
@@ -50,7 +50,6 @@
       }
     ]
   },
-  // 配色方案
   "schemes": [
     {
       "name": "Andromeda",
@@ -58,16 +57,14 @@
       "red": "#cd3131",
       "green": "#05bc79",
       "yellow": "#09da0f",
-      // "yellow": "#e5e512",
-      "blue": "#2472c8",
+      "blue": "#4985c5",
       "purple": "#bc3fbc",
       "cyan": "#0fa8cd",
       "white": "#e5e5e5",
       "brightBlack": "#666666",
       "brightRed": "#cd3131",
       "brightGreen": "#05bc79",
-      "brightYellow": "#09da0f",
-      // "brightYellow": "#e5e512",
+      "brightYellow": "#e5e512",
       "brightBlue": "#2472c8",
       "brightPurple": "#bc3fbc",
       "brightCyan": "#0fa8cd",
@@ -76,50 +73,25 @@
       "foreground": "#e5e5e5"
     },
     {
-      "name": "Campbell",
-      "foreground": "#F2F2F2",
-      "background": "#0C0C0C",
-      "colors": [
-        "#0C0C0C",
-        "#C50F1F",
-        "#13A10E",
-        "#C19C00",
-        "#0037DA",
-        "#881798",
-        "#3A96DD",
-        "#CCCCCC",
-        "#767676",
-        "#E74856",
-        "#16C60C",
-        "#F9F1A5",
-        "#3B78FF",
-        "#B4009E",
-        "#61D6D6",
-        "#F2F2F2"
-      ]
-    },
-    {
-      "name": "Solarized Dark",
-      "foreground": "#FDF6E3",
-      "background": "#073642",
-      "colors": [
-        "#073642",
-        "#D30102",
-        "#859900",
-        "#B58900",
-        "#268BD2",
-        "#D33682",
-        "#2AA198",
-        "#EEE8D5",
-        "#002B36",
-        "#CB4B16",
-        "#586E75",
-        "#657B83",
-        "#839496",
-        "#6C71C4",
-        "#93A1A1",
-        "#FDF6E3"
-      ]
+      "name": "Brogrammer",
+      "black": "#1f1f1f",
+      "red": "#db5559",
+      "green": "#5ab376",
+      "yellow": "#ecba0f",
+      "blue": "#2d5e86",
+      "purple": "#4e5ab7",
+      "cyan": "#0f7ddb",
+      "white": "#d6dbe5",
+      "brightBlack": "#575757",
+      "brightRed": "#db5559",
+      "brightGreen": "#48bb72",
+      "brightYellow": "#f7d204",
+      "brightBlue": "#2d5e86",
+      "brightPurple": "#5350b9",
+      "brightCyan": "#0f7ddb",
+      "brightWhite": "#ffffff",
+      "background": "#131313",
+      "foreground": "#d6dbe5"
     }
   ],
   "keybindings": [
